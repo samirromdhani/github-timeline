@@ -23,8 +23,7 @@ jobs:
         rc=0
         for repo in \
           powsybl/powsybl-core \
-          powsybl/powsybl-diagram \
-          terraform-providers/terraform-provider-aws; do
+          powsybl/powsybl-diagram; do
           echo "::group::Fetching ${repo}"
           if ! go run main.go "${repo}"; then
             echo "::warning::failed to fetch ${repo}"
