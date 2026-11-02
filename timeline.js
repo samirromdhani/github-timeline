@@ -60,7 +60,11 @@ function populateGraph(timeline, repo) {
     issues,
     prs,
   ];
-  Plotly.newPlot('graph', data, layout, {displayModeBar: false});
+  Plotly.newPlot('graph', data, layout, {
+  displayModeBar: true,
+  displaylogo: false,
+  modeBarButtons: [['toImage']]
+});
 }
 
 document.addEventListener('DOMContentLoaded', function() {
