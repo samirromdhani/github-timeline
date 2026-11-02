@@ -1,6 +1,7 @@
 const repos = [
   'powsybl/powsybl-core',
-  'powsybl/powsybl-diagram'
+  'powsybl/powsybl-diagram',
+  'powsybl/powsybl-network-viewer'
 ];
 
 function loadTimeline() {

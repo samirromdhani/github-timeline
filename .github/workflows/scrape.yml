@@ -21,7 +21,8 @@ jobs:
         rc=0
         for repo in \
           powsybl/powsybl-core \
-          powsybl/powsybl-diagram; do
+          powsybl/powsybl-diagram \
+          powsybl/powsybl-network-viewer; do
           echo "::group::Fetching ${repo}"
           if ! go run main.go "${repo}"; then
             echo "::warning::failed to fetch ${repo}"
