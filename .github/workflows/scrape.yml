@@ -1,9 +1,7 @@
 name: Scrape latest data
 
 on:
-  push:
-    branches:
-      - 'dev'
+  workflow_dispatch:
 
 jobs:
   scrape:

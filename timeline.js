@@ -1,9 +1,6 @@
 const repos = [
-  'hashicorp/terraform',
-  'kubernetes/kubernetes',
-  'kubernetes/kops',
-  'mastodon/mastodon',
-  'terraform-providers/terraform-provider-aws'
+  'powsybl/powsybl-core',
+  'powsybl/powsybl-diagram'
 ];
 
 function loadTimeline() {
