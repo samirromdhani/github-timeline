@@ -1,7 +1,14 @@
 name: Scrape latest data
 
 on:
+  push:
+    branches:
+      - 'main'
   workflow_dispatch:
+
+concurrency:
+  group: pipeline-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   scrape:
