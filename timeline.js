@@ -8,6 +8,7 @@ function loadTimeline() {
 
   const params = new URLSearchParams(location.search);
   params.set('repo', repo);
+  console.log('repo :: ',repo);
   window.history.replaceState({}, '', `${location.pathname}?${params.toString()}`);
 
   fetch('data/' + repo + '.json')
