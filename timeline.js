@@ -1,7 +1,13 @@
 const repos = [
   'powsybl/powsybl-core',
   'powsybl/powsybl-diagram',
-  'powsybl/powsybl-network-viewer'
+  'powsybl/powsybl-network-viewer',
+  'powsybl/powsybl-metrix',
+  'powsybl/powsybl-afs',
+  'powsybl/powsybl-hpc',
+  'powsybl/powsybl-optimizer',
+  'powsybl/powsybl-parent',
+  'powsybl/powsybl-distribution'
 ];
 
 function loadTimeline() {

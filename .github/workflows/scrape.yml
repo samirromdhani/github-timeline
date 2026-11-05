@@ -29,7 +29,13 @@ jobs:
         for repo in \
           powsybl/powsybl-core \
           powsybl/powsybl-diagram \
-          powsybl/powsybl-network-viewer; do
+          powsybl/powsybl-network-viewer \
+          powsybl/powsybl-metrix \
+          powsybl/powsybl-afs \
+          powsybl/powsybl-hpc \
+          powsybl/powsybl-optimizer \
+          powsybl/powsybl-parent \
+          powsybl/powsybl-distribution; do
           echo "::group::Fetching ${repo}"
           if ! go run main.go "${repo}"; then
             echo "::warning::failed to fetch ${repo}"
